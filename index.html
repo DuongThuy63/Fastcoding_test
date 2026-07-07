@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
@@ -18,15 +21,21 @@
     <div class="topbar">
         <div class="container topbar-content">
             <div class="contact-info">
-                <span>&#9993; Info@webmail.com</span>
-                <span>&#128205; 547 ns tower St. anglo City, USA</span>
+             <span>
+                <img src="./icons/Email_icon.svg" alt="Mail">
+                Info@webmail.com
+            </span>
+            <span>
+                <img src="./icons/Location_icon.svg" alt="Location">
+                547 ns tower St. anglo City, USA
+            </span>
             </div>
             <div class="socials">
-                <span>f</span>
-                <span class="twitter">t</span>
-                <span>ig</span>
-                <span>yt</span>
-                <span>p</span>
+                <span><i class="fa-brands fa-facebook-f"></i></span>
+                <span><i class="fa-brands fa-twitter"></i></span>
+                <span><i class="fa-brands fa-instagram"></i></span>
+                <span><i class="fa-brands fa-youtube"></i></span>
+                <span><i class="fa-brands fa-pinterest-p"></i></span>
             </div>
         </div>
 
@@ -37,16 +46,16 @@
     <header class="main-nav">
         <div class="container nav-container">
             <div class="logo">
-                <span class="c-icon">C</span>Reanty<span class="dot">.</span>
+                <img src="./images/Logo.svg" alt=""">
             </div>
-            <nav class="links">
+           <nav class="links">
                 <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Feature</a></li>
-                    <li><a href="#">Market</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#feature">Feature</a></li>
+                    <li><a href="#market">Market</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="nav-right">
@@ -58,49 +67,7 @@
     <!-- ===========================
         HERO
 =========================== -->
-    <!-- <section class="hero">
-    <div class="container hero-content">
-        <div class="hero-text">
-            <h1>Find the best Real Estate on your country .</h1>
-            <p>With over 1 million homes for sale available on the website, Renting can match you with a house.</p>
-            <button class="cta-btn">Start membership &rsaquo;</button>
-
-            <div class="thumbnails">
-                <div class="thumb-row">
-                <div class="thumb">HOUSE 1</div>
-                <div class="thumb" style="background:#c9c9c9;">HOUSE 2</div>
-                <div class="thumb" style="background:#d6d6d6;">HOUSE 3</div>
-                </div>
-                <div class="dots">
-                <span class="line"></span>
-                <span class="active-dot">1</span>
-                <span>2</span>
-                <span>3</span>
-            </div>
-        </div>
-
-        <div class="hero-image-wrap">
-            <div class="revenue-card">
-                <div class="revenue-icon">
-                <div class="bar-icon">
-                    <span style="height:14px;"></span>
-                    <span style="height:20px;"></span>
-                    <span style="height:26px;"></span>
-                </div>
-                <span class="coin">$</span>
-                </div>
-                <div class="amount">$7454.21</div>
-                <div class="label">Revenue</div>
-            </div>
-
-            <div class="how-it-works">
-                How it works
-            <span class="play-btn">&#9658;</span>
-            </div>
-        </div>
-    </div>
-</section> -->
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="container hero-content">
 
             <!-- Hero Left -->
@@ -135,24 +102,17 @@
             <!-- Hero Right -->
             <div class="hero-image-wrap">
 
-                <!-- Ảnh -->
-                <!-- Sau này thêm ảnh vào đây -->
-                <!-- <img src="images/hero.png" alt="Hero Image"> -->
+                 <!-- Vector -->
+                <!-- <img src="images/Vector.svg"
+                    class="hero-arrow"
+                 alt=""> -->
+
 
                 <!-- Revenue Card -->
-                <div class="revenue-card">
-
-                    <div class="revenue-icon">
-
-                        <div class="bar-icon">
-                            <span class="bar-1"></span>
-                            <span class="bar-2"></span>
-                            <span class="bar-3"></span>
-                        </div>
-
-                        <span class="coin">$</span>
-
-                    </div>
+                <div class="revenue-card">          
+                        <img src="images/increase.svg"
+                            class="revenue-icon"
+                        alt="">
 
                     <div class="amount">$7454.21</div>
 
@@ -188,21 +148,24 @@
             <div class="guide-list">
 
                 <div class="guide-card">
-                    <div class="guide-icon">🏠</div>
+                    <img src="icons/buyerguide_icon.svg" class="guide-icon"
+                        alt="">
                     <h3>Buyer Guides</h3>
-                    <p>Nibh nullam vitae semper pharetra sit enim.</p>
+                    <p>Nurture valuable leads into customers, and turn one time.</p>
                 </div>
 
                 <div class="guide-card active">
-                    <div class="guide-icon">🏢</div>
+                    <img src="icons/renter_icon.svg" class="guide-icon"
+                        alt="">
                     <h3>Renter Guides</h3>
-                    <p>Nibh nullam vitae semper pharetra sit enim.</p>
+                    <p>Build brand awareness on the top social media networks.</p>
                 </div>
 
                 <div class="guide-card">
-                    <div class="guide-icon">📑</div>
+                    <img src="icons/seller_icon.svg" class="guide-icon"
+                        alt="">
                     <h3>Seller Guides</h3>
-                    <p>Nibh nullam vitae semper pharetra sit enim.</p>
+                    <p>Get professionally-written content that attracts qualified.</p>
                 </div>
 
             </div>
@@ -212,21 +175,19 @@
     <!-- ===========================
         DREAM LIVING
 =========================== -->
-    <section class="dream">
+    <section class="dream" id="about">
         <div class="container dream-content">
 
             <div class="dream-images">
 
                 <div class="img-box img-back">
-                    <img src="images/house1.jpg" alt="">
                 </div>
 
                 <div class="img-box img-front">
-                    <img src="images/house2.jpg" alt="">
                 </div>
 
                 <div class="rating-card">
-                    ⭐
+                     <img src="icons/star.svg" alt="">
                     <p>5 Star Rating</p>
                 </div>
 
@@ -251,29 +212,32 @@
                 <div class="feature-list">
 
                     <div class="feature-item">
-                        <div class="feature-icon">✔</div>
+                        <img src="icons/clarity_home-line.svg" class="feature-icon"
+                        alt="">
 
                         <div>
-                            <h4>Trusted Property</h4>
-                            <p>Verified listings from trusted owners.</p>
+                            <h4>The perfect Rsidencye</h4>
+                            <p>Take a deep dive and browse origin neighborhood photos.</p>
                         </div>
                     </div>
 
                     <div class="feature-item">
-                        <div class="feature-icon">✔</div>
+                        <img src="icons/clarity_user-outline-alerted.svg" class="feature-icon"
+                        alt="">
 
                         <div>
-                            <h4>Top Location</h4>
-                            <p>Find homes in the best neighborhoods.</p>
+                            <h4>Global Arhitect Experts</h4>
+                            <p>Take a deep dive and browse origin neighborhood photos.</p>
                         </div>
                     </div>
 
                     <div class="feature-item">
-                        <div class="feature-icon">✔</div>
+                        <img src="icons/fluent_globe-location-24-regular.svg" class="feature-icon"
+                        alt="">
 
                         <div>
-                            <h4>24/7 Support</h4>
-                            <p>Our team is always ready to help.</p>
+                            <h4>Built-in a storage capable</h4>
+                            <p>Take a deep dive and browse origin neighborhood photos.</p>
                         </div>
                     </div>
 
@@ -291,7 +255,10 @@
             <!-- Left -->
             <div class="today-left">
 
-                <span class="section-tag">About Home</span>
+                <span class="section-tag">
+                    <img src="icons/AboutHome_Icon.svg" alt="">
+                    About Home
+                </span>
 
                 <h2>Today Sells Properties</h2>
 
@@ -345,7 +312,7 @@
     </section>
 
     <!-- ================= Services ================= -->
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
 
             <div class="section-title">
@@ -359,9 +326,8 @@
             <div class="service-grid">
 
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-bed"></i>
-                    </div>
+                    <img src="icons/bedroom_icon.svg" class="service-icon"
+                        alt="">
 
                     <h3>Bed Rooms</h3>
 
@@ -376,9 +342,8 @@
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-water-ladder"></i>
-                    </div>
+                    <img src="icons/swimmingpool_icon.svg" class="service-icon"
+                        alt="">
 
                     <h3>Swimming Pool</h3>
 
@@ -393,9 +358,8 @@
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-ruler"></i>
-                    </div>
+                    <img src="icons/copywriting_icon.svg" class="service-icon"
+                        alt="">
 
                     <h3>Copywriting Content</h3>
 
@@ -410,9 +374,8 @@
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-house"></i>
-                    </div>
+                    <img src="icons/smarthome_icon.svg" class="service-icon"
+                        alt="">
 
                     <h3>Smart Home</h3>
 
@@ -427,9 +390,8 @@
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-book"></i>
-                    </div>
+                    <img src="icons/library_icon.svg" class="service-icon"
+                        alt="">
 
                     <h3>Library Area</h3>
 
@@ -444,9 +406,8 @@
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
+                    <img src="icons/responsive_icon.svg" class="service-icon"
+                        alt="">
 
                     <h3>Responsive Duty</h3>
 
@@ -465,7 +426,7 @@
         </div>
     </section>
 
-    <section class="featured">
+    <section class="featured" id="feature">
 
     <div class="container">
 
@@ -659,6 +620,494 @@
     </div>
 
 </section>
+<section class="projects" id="market">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                We build more projects<br>
+                successful
+            </h2>
+
+        </div>
+
+        <div class="project-list">
+
+            <div class="project-card">
+                <div class="project-image"></div>
+
+                <div class="project-overlay">
+                    <h3>San Francisco, California</h3>
+
+                    <button>
+                        See more
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image"></div>
+
+                <div class="project-overlay">
+                    <h3>Washington DC</h3>
+
+                    <button>
+                        See more
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image"></div>
+
+                <div class="project-overlay">
+                    <h3>Chicago</h3>
+
+                    <button>
+                        See more
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Subscribe -->
+
+        <form class="subscribe-form">
+
+            <div class="input-group">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <input
+                    type="email"
+                    placeholder="Enter your email here"
+                >
+
+            </div>
+
+            <button type="submit">
+                Subscribe
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<section class="blog">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>From our blog</h2>
+
+            <p>
+                Find your suitable house here and stay safe and
+                relaxe with pleasure
+            </p>
+
+        </div>
+
+        <div class="blog-list">
+
+            <!-- Card -->
+
+            <article class="blog-card">
+
+                <div class="blog-image"></div>
+
+                <div class="blog-content">
+
+                    <h3>How to rent a home very easily?</h3>
+
+                    <div class="blog-category">
+
+                        <i class="fa-regular fa-bookmark"></i>
+
+                        Rentals
+
+                    </div>
+
+                    <p>
+
+                        How to rent a home very easily in this pandemic
+                        situation. You can rent house through using our
+                        platform...
+
+                    </p>
+
+                    <div class="blog-footer">
+
+                        <span>
+
+                            <i class="fa-regular fa-calendar"></i>
+
+                            3 years ago
+
+                        </span>
+
+                        <span>
+
+                            <i class="fa-regular fa-user"></i>
+
+                            By <a href="#">Mike Hesson</a>
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- Copy thêm 2 card -->
+            <article class="blog-card">
+                <div class="blog-image"></div>
+
+                <div class="blog-content">
+
+                    <h3>How to rent a home very easily?</h3>
+
+                    <div class="blog-category">
+                        <i class="fa-regular fa-bookmark"></i>
+                        Rentals
+                    </div>
+
+                    <p>
+                        How to rent a home very easily in this pandemic
+                        situation. You can rent house through using our
+                        platform...
+                    </p>
+
+                    <div class="blog-footer">
+
+                        <span>
+                            <i class="fa-regular fa-calendar"></i>
+                            3 years ago
+                        </span>
+
+                        <span>
+                            <i class="fa-regular fa-user"></i>
+                            By <a href="#">Mike Hesson</a>
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image"></div>
+
+                <div class="blog-content">
+
+                    <h3>How to rent a home very easily?</h3>
+
+                    <div class="blog-category">
+                        <i class="fa-regular fa-bookmark"></i>
+                        Rentals
+                    </div>
+
+                    <p>
+                        How to rent a home very easily in this pandemic
+                        situation. You can rent house through using our
+                        platform...
+                    </p>
+
+                    <div class="blog-footer">
+
+                        <span>
+                            <i class="fa-regular fa-calendar"></i>
+                            3 years ago
+                        </span>
+
+                        <span>
+                            <i class="fa-regular fa-user"></i>
+                            By <a href="#">Mike Hesson</a>
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <div class="blog-btn">
+
+            <button>
+
+                Read All
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span class="sub-title">Contact with us</span>
+
+            <h2>Looking For To Buy A Property?</h2>
+
+        </div>
+
+        <div class="contact-wrapper">
+
+            <!-- Left -->
+
+            <div class="contact-left">
+
+                <p class="contact-desc">
+                    Browse our property listing and find your best and suitable
+                    home or house for sale, rent and buying. It's so easy and fast.
+                </p>
+
+                <ul class="contact-list">
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Archit ecto beatae vitae dicta sunt
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Largest global RealEstate market
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Nor again is there anyone
+                    </li>
+
+                </ul>
+
+                <div class="contact-image">
+
+                    <div class="image-back"></div>
+
+                    <div class="image-front"></div>
+
+                    <div class="square-orange"></div>
+
+                    <div class="square-black"></div>
+
+                </div>
+
+            </div>
+
+            <!-- Right -->
+
+            <div class="contact-form">
+
+                <h3>Contact Us</h3>
+
+                <form>
+
+                    <div class="form-group">
+
+                        <label>Name</label>
+
+                        <input type="text" placeholder="Enter your name">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Email</label>
+
+                        <input type="email" placeholder="Enter your email">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Message</label>
+
+                        <textarea placeholder="Enter your message"></textarea>
+
+                    </div>
+
+                    <button type="submit">
+                        Send
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <!-- Logo -->
+
+            <div class="footer-item">
+
+                <a href="#" class="footer-logo">
+                    <i class="fa-solid fa-house"></i>
+                    Reanty<span>.</span>
+                </a>
+
+                <p>
+                    With over 1 million homes for sale available
+                    on the website.
+                </p>
+
+                <div class="footer-social">
+
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+
+                </div>
+
+            </div>
+
+            <!-- Company -->
+
+            <div class="footer-item">
+
+                <h3>Company</h3>
+
+                <ul>
+
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">How we work?</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div class="footer-item">
+
+                <h3>Contact</h3>
+
+                <ul>
+
+                    <li><a href="#">Help/FAQ</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                    <li><a href="#">Property owners</a></li>
+                    <li><a href="#">Partners</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- More -->
+
+            <div class="footer-item">
+
+                <h3>More</h3>
+
+                <ul>
+
+                    <li><a href="#">Land fees</a></li>
+                    <li><a href="#">Property</a></li>
+                    <li><a href="#">Law tips</a></li>
+                    <li><a href="#">Nadges</a></li>
+                    <li><a href="#">Privacy</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Office -->
+
+            <div class="footer-item">
+
+                <h3>Head Office</h3>
+
+                <p>
+
+                    Xilliams Corner Wine © 2017.
+                    1112 A Market St # Ste B22,
+                    Charlottesville, CA 45565
+
+                </p>
+
+                <h3 class="newsletter-title">
+
+                    News letter
+
+                </h3>
+
+                <form class="footer-newsletter">
+
+                    <input
+                        type="email"
+                        placeholder="Enter your email address"
+                    >
+
+                    <button>
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <div class="footer-contact">
+
+                <a href="mailto:email@gmail.com">
+                    email@gmail.com
+                </a>
+
+                <a href="tel:1234567890">
+                    (123) 456-7890
+                </a>
+
+            </div>
+
+            <p>
+
+                © 2021 Aeyman Megha All rights reserved.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
 </body>
 
 </html>
