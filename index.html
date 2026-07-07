@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
@@ -18,15 +21,21 @@
     <div class="topbar">
         <div class="container topbar-content">
             <div class="contact-info">
-                <span>&#9993; Info@webmail.com</span>
-                <span>&#128205; 547 ns tower St. anglo City, USA</span>
+             <span>
+                <img src="./icons/Email_icon.svg" alt="Mail">
+                Info@webmail.com
+            </span>
+            <span>
+                <img src="./icons/Location_icon.svg" alt="Location">
+                547 ns tower St. anglo City, USA
+            </span>
             </div>
             <div class="socials">
-                <span>f</span>
-                <span class="twitter">t</span>
-                <span>ig</span>
-                <span>yt</span>
-                <span>p</span>
+                <span><i class="fa-brands fa-facebook-f"></i></span>
+                <span><i class="fa-brands fa-twitter"></i></span>
+                <span><i class="fa-brands fa-instagram"></i></span>
+                <span><i class="fa-brands fa-youtube"></i></span>
+                <span><i class="fa-brands fa-pinterest-p"></i></span>
             </div>
         </div>
 
@@ -37,16 +46,16 @@
     <header class="main-nav">
         <div class="container nav-container">
             <div class="logo">
-                <span class="c-icon">C</span>Reanty<span class="dot">.</span>
+                <img src="./images/Logo.svg" alt=""">
             </div>
-            <nav class="links">
+           <nav class="links">
                 <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Feature</a></li>
-                    <li><a href="#">Market</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#feature">Feature</a></li>
+                    <li><a href="#market">Market</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="nav-right">
@@ -58,7 +67,7 @@
     <!-- ===========================
         HERO
 =========================== -->
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="container hero-content">
 
             <!-- Hero Left -->
@@ -93,24 +102,17 @@
             <!-- Hero Right -->
             <div class="hero-image-wrap">
 
-                <!-- Ảnh -->
-                <!-- Sau này thêm ảnh vào đây -->
-                <!-- <img src="images/hero.png" alt="Hero Image"> -->
+                 <!-- Vector -->
+                <!-- <img src="images/Vector.svg"
+                    class="hero-arrow"
+                 alt=""> -->
+
 
                 <!-- Revenue Card -->
-                <div class="revenue-card">
-
-                    <div class="revenue-icon">
-
-                        <div class="bar-icon">
-                            <span class="bar-1"></span>
-                            <span class="bar-2"></span>
-                            <span class="bar-3"></span>
-                        </div>
-
-                        <span class="coin">$</span>
-
-                    </div>
+                <div class="revenue-card">          
+                        <img src="images/increase.svg"
+                            class="revenue-icon"
+                        alt="">
 
                     <div class="amount">$7454.21</div>
 
@@ -146,21 +148,24 @@
             <div class="guide-list">
 
                 <div class="guide-card">
-                    <div class="guide-icon">🏠</div>
+                    <img src="icons/buyerguide_icon.svg" class="guide-icon"
+                        alt="">
                     <h3>Buyer Guides</h3>
-                    <p>Nibh nullam vitae semper pharetra sit enim.</p>
+                    <p>Nurture valuable leads into customers, and turn one time.</p>
                 </div>
 
                 <div class="guide-card active">
-                    <div class="guide-icon">🏢</div>
+                    <img src="icons/renter_icon.svg" class="guide-icon"
+                        alt="">
                     <h3>Renter Guides</h3>
-                    <p>Nibh nullam vitae semper pharetra sit enim.</p>
+                    <p>Build brand awareness on the top social media networks.</p>
                 </div>
 
                 <div class="guide-card">
-                    <div class="guide-icon">📑</div>
+                    <img src="icons/seller_icon.svg" class="guide-icon"
+                        alt="">
                     <h3>Seller Guides</h3>
-                    <p>Nibh nullam vitae semper pharetra sit enim.</p>
+                    <p>Get professionally-written content that attracts qualified.</p>
                 </div>
 
             </div>
@@ -170,21 +175,19 @@
     <!-- ===========================
         DREAM LIVING
 =========================== -->
-    <section class="dream">
+    <section class="dream" id="about">
         <div class="container dream-content">
 
             <div class="dream-images">
 
                 <div class="img-box img-back">
-                    <img src="images/house1.jpg" alt="">
                 </div>
 
                 <div class="img-box img-front">
-                    <img src="images/house2.jpg" alt="">
                 </div>
 
                 <div class="rating-card">
-                    ⭐
+                     <img src="icons/star.svg" alt="">
                     <p>5 Star Rating</p>
                 </div>
 
@@ -209,29 +212,32 @@
                 <div class="feature-list">
 
                     <div class="feature-item">
-                        <div class="feature-icon">✔</div>
+                        <img src="icons/clarity_home-line.svg" class="feature-icon"
+                        alt="">
 
                         <div>
-                            <h4>Trusted Property</h4>
-                            <p>Verified listings from trusted owners.</p>
+                            <h4>The perfect Rsidencye</h4>
+                            <p>Take a deep dive and browse origin neighborhood photos.</p>
                         </div>
                     </div>
 
                     <div class="feature-item">
-                        <div class="feature-icon">✔</div>
+                        <img src="icons/clarity_user-outline-alerted.svg" class="feature-icon"
+                        alt="">
 
                         <div>
-                            <h4>Top Location</h4>
-                            <p>Find homes in the best neighborhoods.</p>
+                            <h4>Global Arhitect Experts</h4>
+                            <p>Take a deep dive and browse origin neighborhood photos.</p>
                         </div>
                     </div>
 
                     <div class="feature-item">
-                        <div class="feature-icon">✔</div>
+                        <img src="icons/fluent_globe-location-24-regular.svg" class="feature-icon"
+                        alt="">
 
                         <div>
-                            <h4>24/7 Support</h4>
-                            <p>Our team is always ready to help.</p>
+                            <h4>Built-in a storage capable</h4>
+                            <p>Take a deep dive and browse origin neighborhood photos.</p>
                         </div>
                     </div>
 
@@ -249,7 +255,10 @@
             <!-- Left -->
             <div class="today-left">
 
-                <span class="section-tag">About Home</span>
+                <span class="section-tag">
+                    <img src="icons/AboutHome_Icon.svg" alt="">
+                    About Home
+                </span>
 
                 <h2>Today Sells Properties</h2>
 
@@ -303,7 +312,7 @@
     </section>
 
     <!-- ================= Services ================= -->
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
 
             <div class="section-title">
@@ -317,9 +326,8 @@
             <div class="service-grid">
 
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-bed"></i>
-                    </div>
+                    <img src="icons/bedroom_icon.svg" class="service-icon"
+                        alt="">
 
                     <h3>Bed Rooms</h3>
 
@@ -334,9 +342,8 @@
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-water-ladder"></i>
-                    </div>
+                    <img src="icons/swimmingpool_icon.svg" class="service-icon"
+                        alt="">
 
                     <h3>Swimming Pool</h3>
 
@@ -351,9 +358,8 @@
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-ruler"></i>
-                    </div>
+                    <img src="icons/copywriting_icon.svg" class="service-icon"
+                        alt="">
 
                     <h3>Copywriting Content</h3>
 
@@ -368,9 +374,8 @@
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-house"></i>
-                    </div>
+                    <img src="icons/smarthome_icon.svg" class="service-icon"
+                        alt="">
 
                     <h3>Smart Home</h3>
 
@@ -385,9 +390,8 @@
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-book"></i>
-                    </div>
+                    <img src="icons/library_icon.svg" class="service-icon"
+                        alt="">
 
                     <h3>Library Area</h3>
 
@@ -402,9 +406,8 @@
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
+                    <img src="icons/responsive_icon.svg" class="service-icon"
+                        alt="">
 
                     <h3>Responsive Duty</h3>
 
@@ -423,7 +426,7 @@
         </div>
     </section>
 
-    <section class="featured">
+    <section class="featured" id="feature">
 
     <div class="container">
 
@@ -617,7 +620,7 @@
     </div>
 
 </section>
-<section class="projects">
+<section class="projects" id="market">
 
     <div class="container">
 
@@ -853,7 +856,7 @@
     </div>
 
 </section>
-<section class="contact">
+<section class="contact" id="contact">
 
     <div class="container">
 

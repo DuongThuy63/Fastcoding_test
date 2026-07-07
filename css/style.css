@@ -18,19 +18,27 @@
     box-sizing:border-box;
 }
   body {
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: 'Nunito', Arial, sans-serif;
     color: var(--dark);
   }
-
+html{
+    scroll-behavior: smooth;
+}
+input,
+textarea,
+select,
+button{
+    font-family: inherit;
+}
 img{
     max-width:100%;
     display:block;
 }
 .container{
     width:100%;
-    max-width:1200px;
-    margin:auto;
-    padding:0 20px;
+    max-width:1400px;
+    margin:0 auto;
+    padding:0 15px;
 }
  /* ===========================
    COMMON
@@ -66,6 +74,9 @@ img{
     align-items: center;
     gap: 6px;
   }
+.fa-twitter{
+    color: #FF5A3C;
+}
   .topbar .socials {
     display: flex;
     gap: 14px;
@@ -82,6 +93,12 @@ img{
 /* ===========================
    HEADER
 =========================== */
+.main-nav{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+}
   header.main-nav {
     /* display: flex;
     align-items: center;
@@ -175,7 +192,7 @@ img{
   }
 .hero-content{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 45% 55%;
     align-items: center;
     gap: 40px;
 }
@@ -199,6 +216,17 @@ img{
     padding: 60px 0;
     max-width: 560px;
   }
+.hero-arrow{
+    width:220px !important;
+    height:auto !important;
+
+    position:absolute;
+    top:120px;
+    right:320px;
+
+    z-index:2;
+    pointer-events:none;
+}
  
   .hero-text h1 {
     font-size: 46px;
@@ -242,12 +270,15 @@ img{
     align-items: center;
     gap: 20px;
   }
+
   .thumb-row {
     display: flex;
-  }
-  .thumb {
+    align-items: flex-end; /* Căn đáy */
+    gap: 8px;
+}
+
+.thumb {
     width: 90px;
-    height: 60px;
     background: #b9b9b9;
     display: flex;
     align-items: flex-end;
@@ -255,8 +286,19 @@ img{
     font-size: 9px;
     color: white;
     font-weight: 600;
-    position: relative;
-  }
+}
+
+.thumb {
+    height: 80px;   /* House 1 */
+}
+
+.thumb-2 {
+    height: 65px;   /* House 2 */
+}
+
+.thumb-3 {
+    height: 50px;   /* House 3 */
+}
   .thumb:first-child { background: #a8a8a8; }
   .dots {
     display: flex;
@@ -285,38 +327,15 @@ img{
     padding: 20px 26px;
     width: 165px;
   }
-  .revenue-icon {
-    display: flex;
-    align-items: flex-end;
-    gap: 4px;
-    margin-bottom: 12px;
-  }
-  .revenue-icon .coin {
-    width: 22px; height: 22px;
-    border-radius: 50%;
-    background: #f5b942;
-    color: white;
-    font-size: 12px;
-    display: flex; align-items: center; justify-content: center;
-    position: absolute;
-    margin-left: 10px;
-    margin-top: -8px;
-  }
-  .bar-icon {
-    display: flex;
-    align-items: flex-end;
-    gap: 3px;
-  }
-  .bar-icon span {
-    width: 6px;
-    background: var(--orange);
-    display: inline-block;
-    border-radius: 2px;
-  }
-  .bar-icon span:nth-child(1) { height: 14px; }
-  .bar-icon span:nth-child(2) { height: 20px; }
-  .bar-icon span:nth-child(3) { height: 26px; }
- 
+ .revenue-icon{
+    width: 40px;   /* chỉnh theo ý muốn */
+    height: auto;
+    display: block;
+}
+ .revenue-card .revenue-icon{
+    width: 40px !important;
+    height: auto !important;
+}
   .revenue-card .amount {
     font-size: 22px;
     font-weight: 800;
@@ -402,8 +421,17 @@ img{
 }
 
 .guide-icon{
-    font-size:40px;
-    margin-bottom:20px;
+    display: block;
+    margin: 0 auto 20px;
+    width: 80px;
+    height: auto;
+    transform: scale(1.5);
+    transform-origin: center;
+}
+.guide-icon img{
+    width: 40px;   /* hoặc theo Figma */
+    height: auto;
+    display: block;
 }
 
 .guide-card h3{
@@ -452,7 +480,7 @@ img{
     z-index: 1;
 }
 .img-front{
-    left: 0;
+    left: 20px;
     bottom: 0;
     z-index: 2;
 }
@@ -460,7 +488,7 @@ img{
 .rating-card{
     position:absolute;
     top:-22px;
-    left:476px;
+    left:605px;
     width:120px;
     height:120px;
     background:#081c22;
@@ -518,22 +546,12 @@ img{
 }
 
 .feature-icon{
-
-    width:45px;
-    height:45px;
-
-    background:var(--orange);
-
+    width:40px;
+    height:40px;
     color:#fff;
-
-    border-radius:50%;
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
     flex-shrink:0;
 }
 
@@ -595,73 +613,17 @@ img{
    TODAY SELL
 =========================== */
 
-/* .today-sell{
-    padding:100px 0;
-    background:#ffffff;
+.section-tag{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.section-title{
-    text-align:center;
-    margin-bottom:60px;
+.section-tag img{
+    width: 18px;      /* chỉnh theo Figma */
+    height: 18px;
+    display: block;
 }
-s
-.subtitle{
-    color:var(--orange);
-    font-size:14px;
-    font-weight:700;
-    letter-spacing:2px;
-    text-transform:uppercase;
-    margin-bottom:12px;
-}
-
-.section-title h2{
-    font-size:48px;
-    font-weight:700;
-    color:var(--dark);
-    line-height:1.3;
-}
-
-.property-list{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:30px;
-}
-
-.property-card{
-    background:#fff;
-    border-radius:12px;
-    overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.property-card:hover{
-    transform:translateY(-8px);
-}
-
-.property-card img{
-    width:100%;
-    height:260px;
-    object-fit:cover;
-}
-
-.property-info{
-    padding:24px;
-}
-
-.price{
-    display:block;
-    color:var(--orange);
-    font-size:22px;
-    font-weight:700;
-    margin-bottom:12px;
-}
-
-.property-info p{
-    color:var(--gray-text);
-    font-size:15px;
-} */
-
 .today-content{
 
     display:grid;
@@ -708,12 +670,38 @@ s
 
 }
 
-.today-list{
-    margin-top:35px;
+ .today-list{
+    list-style: none;
+    padding: 0;
+    margin: 32px 0 0;
 }
 
 .today-list li{
-    margin-bottom:20px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 24px;
+
+    color: #8A97A6;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.today-list li::before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: #FF5A3C;
+    flex-shrink: 0;
+}
+
+.today-left h2{
+    font-size: 38px;      /* Tăng kích thước chữ */
+    font-weight: 700;     /* Độ đậm */
+    line-height: 1.2;     /* Khoảng cách giữa các dòng nếu tiêu đề xuống dòng */
+    color: #071C1F;
+    margin: 20px 0 28px;  /* Trên | Trái phải | Dưới */
 }
 
 /* ===========================
@@ -831,19 +819,11 @@ s
 }
 
 .service-icon{
-    width:70px;
-    height:70px;
-    background:#fff;
     margin:auto;
-    margin-bottom:30px;
-
     border-radius:15px;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
 .service-icon i{
@@ -1597,7 +1577,7 @@ s
 
 .contact-form h3{
 
-    font-size:52px;
+    font-size:45px;
 
     margin-bottom:35px;
 }
@@ -1719,7 +1699,7 @@ s
 
     text-decoration:none;
 
-    font-size:36px;
+    font-size:28px;
 
     font-weight:700;
 
@@ -1796,19 +1776,13 @@ s
 .footer-social a{
 
     width:42px;
-
     height:42px;
-
     border:1px solid #ff5a3c;
-
     display:flex;
-
     justify-content:center;
-
+    border-radius: 5px;
     align-items:center;
-
     color:#ff5a3c;
-
     transition:.3s;
 }
 
@@ -1849,16 +1823,17 @@ s
 }
 
 .footer-newsletter button{
+    width: 50px;
+    height: 50px;
 
-    border:none;
-
-    background:none;
-
-    color:#ff5a3c;
-
-    cursor:pointer;
+    border: none;
+    background: none;
+    color: #ff5a3c;
+    cursor: pointer;
 }
-
+.footer-newsletter button i{
+    font-size: 20px;
+}
 /* Bottom */
 
 .footer-bottom{
